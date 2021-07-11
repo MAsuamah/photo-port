@@ -31,8 +31,11 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setFormState({})
-    console.log(formState); 
+    console.log(formState);
+    e.target[0].value = '';
+    e.target[1].value = '';  
+    e.target[2].value = ''
+
   } 
   
   return (
